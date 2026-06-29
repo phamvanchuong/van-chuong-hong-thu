@@ -279,6 +279,10 @@ if (gbForm) {
         const name    = document.getElementById('gbName').value.trim();
         const message = document.getElementById('gbMessage').value.trim();
         if (!name || !message) return;
+        if (name.length > 100 || message.length > 500) {
+            alert('Tên tối đa 100 ký tự, lời chúc tối đa 500 ký tự.');
+            return;
+        }
 
         if (APPS_SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL') {
             alert('⚙️ Vui lòng cấu hình APPS_SCRIPT_URL trong script.js trước!');
