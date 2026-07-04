@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiệp Cưới – Văn Chương &amp; Hồng Thư</title>
+    <script>
+        // Khôi phục đường dẫn gốc do 404.html chuyển hướng về dạng /?/<ten-khach>
+        // (kỹ thuật spa-github-pages – xem 404.html)
+        (function(l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search.slice(1).split('&').map(function(s) {
+                    return s.replace(/~and~/g, '&');
+                }).join('?').replace(/\/+$/, ''); // bỏ "/" cuối để CSS/JS tương đối không bị sai đường dẫn
+                window.history.replaceState(null, null,
+                    l.pathname.slice(0, -1) + decoded + l.hash
+                );
+            }
+        }(window.location));
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
@@ -50,7 +64,9 @@
             </div>
 
             <p class="cover-date">25/07/2026</p>
-            <p class="cover-invite">Thân Mời</p>
+
+            <p class="cover-invite">Trân trọng kính mời</p>
+            <p class="cover-guest" id="coverGuestName">Quý Khách</p>
 
             <button class="cover-btn" id="openBtn" onclick="openInvitation()">
                 Mở thiệp
@@ -74,80 +90,60 @@
         </div>
     </section>
 
-    <!-- ── ALBUM ẢNH CƯỚI ── -->
+    <!-- ── LỄ GIA TIÊN ── -->
     <section class="section">
-        <h2 class="section-title animate-on-scroll">ALBUM ẢNH CƯỚI</h2>
-        <div class="album-grid animate-on-scroll">
-            <!-- Đặt ảnh cưới vào thư mục images/ với tên anh1.jpg → anh7.jpg -->
-            <div class="album-item" onclick="openLightbox(this)">
-                <img src="images/anh1.jpg" alt="Ảnh cưới 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 1</span></div>
-            </div>
-            <div class="album-item" onclick="openLightbox(this)">
-                <img src="images/anh2.jpg" alt="Ảnh cưới 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 2</span></div>
-            </div>
-            <div class="album-item" onclick="openLightbox(this)">
-                <img src="images/anh3.jpg" alt="Ảnh cưới 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 3</span></div>
-            </div>
-            <div class="album-item" onclick="openLightbox(this)">
-                <img src="images/anh4.jpg" alt="Ảnh cưới 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 4</span></div>
-            </div>
-            <div class="album-item" onclick="openLightbox(this)">
-                <img src="images/anh5.jpg" alt="Ảnh cưới 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 5</span></div>
-            </div>
-            <div class="album-item" onclick="openLightbox(this)">
-                <img src="images/anh6.jpg" alt="Ảnh cưới 6" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 6</span></div>
-            </div>
-            <div class="album-item album-item-wide" onclick="openLightbox(this)">
-                <img src="images/anh7.jpg" alt="Ảnh cưới 7" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 7</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── THÔNG TIN LỄ CƯỚI ── -->
-    <section class="section">
-        <h2 class="section-title animate-on-scroll">THÔNG TIN LỄ CƯỚI</h2>
+        <h2 class="section-title animate-on-scroll">LỄ GIA TIÊN</h2>
 
         <div class="parents-wrapper animate-on-scroll">
             <div class="parents-block">
                 <p class="parents-label">Ông Bà</p>
                 <p class="parents-name">Phạm Công Chánh</p>
                 <p class="parents-name">&amp; Trần Thị Kim Dung</p>
-                <p class="parents-address">Xã Đông Thanh, Tp. Hồ Chí Minh</p>
+                <p class="parents-address">61/3R, Ấp 20<br>X. Đông Thạnh, TP. HCM</p>
             </div>
             <div class="parents-sep">❦</div>
             <div class="parents-block">
                 <p class="parents-label">Ông Bà</p>
                 <p class="parents-name">Nguyễn Xuân Luận</p>
                 <p class="parents-name">&amp; Nguyễn Thị Kính</p>
-                <p class="parents-address">Hòa Minh, Xã Phan Rí Của<br>Lâm Đồng</p>
+                <p class="parents-address">Hòa Minh, X. Phan Rí Cửa<br>T. Lâm Đồng</p>
             </div>
         </div>
 
         <div class="announce-block animate-on-scroll">
             <p class="announce-top">TRÂN TRỌNG BÁO TIN</p>
-            <p class="announce-sub">LỄ THÀNH HÔN CỦA CON CHÚNG TÔI</p>
+            <p class="announce-sub">LỄ TÂN HÔN CỦA CON CHÚNG TÔI</p>
             <h2 class="couple-name">Phạm Văn Chương</h2>
             <p class="couple-title">TRƯỞNG NAM</p>
             <div class="couple-and">&amp;</div>
             <h2 class="couple-name">Nguyễn Hồng Thư</h2>
             <p class="couple-title">ÚT NỮ</p>
         </div>
+
+        <div class="gia-tien-card animate-on-scroll">
+            <p class="gt-line">Hôn lễ được cử hành tại</p>
+            <p class="gt-place">TƯ GIA</p>
+            <p class="gt-time">VÀO LÚC 09:00 ĐẾN 11:00</p>
+            <p class="gt-date">THỨ BẢY <span class="gt-sep">|</span> 25.07.2026</p>
+            <p class="gt-lunar">(Nhằm ngày 12 tháng 06 năm Bính Ngọ)</p>
+        </div>
     </section>
 
-    <!-- ── THÔNG TIN TIỆC CƯỚI ── -->
+    <!-- ── THÔNG TIN TIỆC CƯỚI TẠI NHÀ HÀNG ── -->
     <section class="section">
-        <h2 class="section-title animate-on-scroll">THÔNG TIN TIỆC CƯỚI</h2>
+        <h2 class="section-title animate-on-scroll">TIỆC CƯỚI TẠI NHÀ HÀNG</h2>
+
+        <div class="venue-info animate-on-scroll">
+            <p class="venue-name">Trung tâm hội nghị tiệc cưới Royal Center</p>
+            <p class="venue-address">180/4 Song Hành, Ấp 61, X. Bà Điểm, TP. HCM</p>
+            <p class="venue-invite">Trân trọng kính mời</p>
+            <p class="venue-guest" id="venueGuestName">Quý Khách</p>
+            <p class="venue-invite-sub">Đến dự buổi tiệc chung vui cùng gia đình chúng tôi</p>
+        </div>
 
         <div class="party-card animate-on-scroll">
             <p class="party-card-sub">TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:</p>
-            <div class="party-time">12:00</div>
+            <div class="party-time">11:00</div>
 
             <div class="party-date-row">
                 <span class="party-day-name">THỨ BẢY</span>
@@ -187,18 +183,14 @@
                 <span class="cd-sep">:</span>
                 <div class="cd-item"><span class="cd-num" id="cdSeconds">00</span><span class="cd-label">giây</span></div>
             </div>
-            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m+c%C6%B0%E1%BB%9Bi+V%C4%83n+Ch%C6%B0%C6%A1ng+%26+H%E1%BB%93ng+Th%C6%B0&dates=20260725T050000Z%2F20260725T070000Z&ctz=Asia%2FHo_Chi_Minh&details=Ti%E1%BB%87c+c%C6%B0%E1%BB%9Bi+c%E1%BB%A7a+Ph%E1%BA%A1m+V%C4%83n+Ch%C6%B0%C6%A1ng+%26+Nguy%E1%BB%85n+H%E1%BB%93ng+Th%C6%B0&location=Royal+Center%2C+180%2F4+Song+H%C3%A0nh%2C+X%C3%A3+B%C3%A0+%C4%90i%E1%BB%83m%2C+Tp.+H%E1%BB%93+Ch%C3%AD+Minh"
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m+c%C6%B0%E1%BB%9Bi+V%C4%83n+Ch%C6%B0%C6%A1ng+%26+H%E1%BB%93ng+Th%C6%B0&dates=20260725T040000Z%2F20260725T070000Z&ctz=Asia%2FHo_Chi_Minh&details=Ti%E1%BB%87c+c%C6%B0%E1%BB%9Bi+c%E1%BB%A7a+Ph%E1%BA%A1m+V%C4%83n+Ch%C6%B0%C6%A1ng+%26+Nguy%E1%BB%85n+H%E1%BB%93ng+Th%C6%B0&location=Royal+Center%2C+180%2F4+Song+H%C3%A0nh%2C+X%C3%A3+B%C3%A0+%C4%90i%E1%BB%83m%2C+Tp.+H%E1%BB%93+Ch%C3%AD+Minh"
                target="_blank" rel="noopener noreferrer" class="add-cal-btn">Thêm vào lịch</a>
         </div>
     </section>
 
-    <!-- ── ĐỊA ĐIỂM ── -->
+    <!-- ── BẢN ĐỒ ── -->
     <section class="section">
-        <h2 class="section-title animate-on-scroll">TIỆC CƯỚI SẼ TỔ CHỨC TẠI</h2>
-        <div class="venue-info animate-on-scroll">
-            <p class="venue-name">Trung tâm hội nghị tiệc cưới Royal Center</p>
-            <p class="venue-address">180/4 Song Hành, Xã Bà Điểm, Tp. Hồ Chí Minh</p>
-        </div>
+        <h2 class="section-title animate-on-scroll">BẢN ĐỒ CHỈ ĐƯỜNG</h2>
         <div class="map-wrapper animate-on-scroll">
             <iframe
                 title="Bản đồ địa điểm tiệc cưới"
@@ -208,6 +200,42 @@
                 allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+        </div>
+    </section>
+
+    <!-- ── ALBUM ẢNH CƯỚI ── -->
+    <section class="section">
+        <h2 class="section-title animate-on-scroll">ALBUM ẢNH CƯỚI</h2>
+        <div class="album-grid animate-on-scroll">
+            <!-- Đặt ảnh cưới vào thư mục images/ với tên anh1.jpg → anh7.jpg -->
+            <div class="album-item" onclick="openLightbox(this)">
+                <img src="images/anh1.jpg" alt="Ảnh cưới 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 1</span></div>
+            </div>
+            <div class="album-item" onclick="openLightbox(this)">
+                <img src="images/anh2.jpg" alt="Ảnh cưới 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 2</span></div>
+            </div>
+            <div class="album-item" onclick="openLightbox(this)">
+                <img src="images/anh3.jpg" alt="Ảnh cưới 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 3</span></div>
+            </div>
+            <div class="album-item" onclick="openLightbox(this)">
+                <img src="images/anh4.jpg" alt="Ảnh cưới 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 4</span></div>
+            </div>
+            <div class="album-item" onclick="openLightbox(this)">
+                <img src="images/anh5.jpg" alt="Ảnh cưới 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 5</span></div>
+            </div>
+            <div class="album-item" onclick="openLightbox(this)">
+                <img src="images/anh6.jpg" alt="Ảnh cưới 6" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 6</span></div>
+            </div>
+            <div class="album-item album-item-wide" onclick="openLightbox(this)">
+                <img src="images/anh7.jpg" alt="Ảnh cưới 7" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 7</span></div>
+            </div>
         </div>
     </section>
 
@@ -282,6 +310,7 @@
     🎵
 </button>
 
+<script src="danhSachKhachMoi.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

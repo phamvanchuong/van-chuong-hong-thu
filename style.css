@@ -180,6 +180,16 @@ body {
     font-size: 1rem;
     color: var(--cream);
     letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+
+/* Tên khách mời (lấy từ danhSachKhachMoi.js theo URL) */
+.cover-guest {
+    font-family: var(--font-serif);
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--gold-light);
+    line-height: 1.35;
     margin-bottom: 26px;
 }
 
@@ -445,6 +455,53 @@ body {
     font-size: 2.2rem; color: var(--gold); margin: 6px 0;
 }
 
+/* Khối lễ gia tiên tại tư gia */
+.gia-tien-card {
+    margin-top: 38px;
+    background: rgba(0, 55, 110, 0.38);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 32px 24px;
+}
+.gt-line {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--cream);
+    margin-bottom: 10px;
+}
+.gt-place {
+    font-family: var(--font-number);
+    font-size: clamp(1.8rem, 7vw, 2.6rem);
+    font-weight: 700;
+    color: var(--gold-pale);
+    letter-spacing: 0.14em;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+.gt-time {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    color: var(--cream);
+    margin-bottom: 8px;
+}
+.gt-date {
+    font-family: var(--font-number);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--gold-pale);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+}
+.gt-sep { color: rgba(201, 162, 39, 0.4); }
+.gt-lunar {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+}
+
 /* ================================================
    TIỆC CƯỚI
 ================================================ */
@@ -572,6 +629,27 @@ body {
 .venue-address {
     font-family: var(--font-sans);
     font-size: 0.85rem; color: var(--text-muted); letter-spacing: 0.04em;
+}
+.venue-invite {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    margin: 16px 0 4px;
+}
+.venue-guest {
+    font-family: var(--font-serif);
+    font-size: 1.15rem; font-weight: 600;
+    color: var(--gold-pale); line-height: 1.4;
+}
+.venue-invite-sub {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+    margin-top: 8px;
 }
 .map-wrapper {
     border-radius: 8px; overflow: hidden;

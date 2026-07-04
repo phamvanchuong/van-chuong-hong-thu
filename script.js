@@ -3,6 +3,30 @@
    Văn Chương & Hồng Thư – 25/07/2026
 ================================================ */
 
+// ── TÊN KHÁCH MỜI TỪ URL ────────────────────────
+// URL dạng https://.../dam-cuoi/anh-viet → slug "anh-viet"
+// Tra trong danhSachKhachMoi (danhSachKhachMoi.js) để hiện tên lên bìa.
+function initGuestName() {
+    if (typeof danhSachKhachMoi === 'undefined') return;
+
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    const slug = decodeURIComponent(segments[segments.length - 1] || '')
+        .replace(/\.html$/i, '')
+        .toLowerCase();
+    if (!slug) return;
+
+    const guest = danhSachKhachMoi.find(k => k.link.toLowerCase() === slug);
+    if (!guest) return;
+
+    document.title = `Thiệp Cưới – Văn Chương & Hồng Thư – Kính mời ${guest.ten}`;
+
+    // Điền tên khách mời ở cả bìa thiệp và phần thông tin nhà hàng
+    ['coverGuestName', 'venueGuestName'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = guest.ten;
+    });
+}
+
 // ── TRÁI TIM RƠI ────────────────────────────────
 const HEART_CHARS  = ['♥', '♥', '♥', '♡', '❤'];  // tỉ lệ ♥ nhiều hơn
 const HEART_COLORS = [
@@ -268,8 +292,11 @@ function safe(str) {
     return d.innerHTML;
 }
 
-// Khởi động hiệu ứng trái tim ngay khi load
-document.addEventListener('DOMContentLoaded', initFallingHearts);
+// Khởi động khi load: tên khách mời + hiệu ứng trái tim
+document.addEventListener('DOMContentLoaded', () => {
+    initGuestName();
+    initFallingHearts();
+});
 
 // Gắn sự kiện form
 const gbForm = document.getElementById('gbForm');
