@@ -2,7 +2,7 @@
    DANH SÁCH KHÁCH MỜI
    - ten:  tên hiển thị trên bìa thiệp
    - link: slug trên URL, ví dụ link "gia-dinh-hien"
-     → https://phamvanchuong.github.io/dam-cuoi/gia-dinh-hien
+     → https://phamvanchuong.github.io/van-chuong-hong-thu/gia-dinh-hien
    Chỉ dùng chữ thường không dấu, số và dấu gạch ngang cho link.
 ================================================ */
 const danhSachKhachMoi = [
@@ -134,12 +134,12 @@ const danhSachKhachMoi = [
   {
     id: 26,
     ten: "Hải + người thương",
-    link: "hai-plus-nguoi-thuong",
+    link: "hai-va-nguoi-thuong",
   },
   {
     id: 27,
     ten: "Anh Thương + người thương",
-    link: "anh-thuong-plus-nguoi-thuong",
+    link: "anh-thuong-va-nguoi-thuong",
   },
   {
     id: 28,
@@ -149,12 +149,12 @@ const danhSachKhachMoi = [
   {
     id: 29,
     ten: "Chị Duyên + người thương",
-    link: "chi-duyen-plus-nguoi-thuong",
+    link: "chi-duyen-va-nguoi-thuong",
   },
   {
     id: 30,
     ten: "Em Định + người thương",
-    link: "em-dinh-plus-nguoi-thuong",
+    link: "em-dinh-va-nguoi-thuong",
   },
   {
     id: 31,
@@ -164,7 +164,7 @@ const danhSachKhachMoi = [
   {
     id: 32,
     ten: "Em Ngọc + người thương",
-    link: "em-ngoc-plus-nguoi-thuong",
+    link: "em-ngoc-va-nguoi-thuong",
   },
   {
     id: 33,
@@ -229,12 +229,12 @@ const danhSachKhachMoi = [
   {
     id: 45,
     ten: "Em Vũ + người thương",
-    link: "em-vu-plus-nguoi-thuong",
+    link: "em-vu-va-nguoi-thuong",
   },
   {
     id: 46,
     ten: "Em Kha + người thương",
-    link: "em-kha-plus-nguoi-thuong",
+    link: "em-kha-va-nguoi-thuong",
   },
   {
     id: 47,
@@ -249,27 +249,27 @@ const danhSachKhachMoi = [
   {
     id: 49,
     ten: "Em Trúc + người thương",
-    link: "em-truc-plus-nguoi-thuong",
+    link: "em-truc-va-nguoi-thuong",
   },
   {
     id: 50,
     ten: "Em Phấn + người thương",
-    link: "em-phan-plus-nguoi-thuong",
+    link: "em-phan-va-nguoi-thuong",
   },
   {
     id: 51,
     ten: "Em Vương + người thương",
-    link: "em-vuong-plus-nguoi-thuong",
+    link: "em-vuong-va-nguoi-thuong",
   },
   {
     id: 52,
     ten: "Em Duy + người thương",
-    link: "em-duy-plus-nguoi-thuong",
+    link: "em-duy-va-nguoi-thuong",
   },
   {
     id: 53,
     ten: "Bạn Đạt + người thương",
-    link: "ban-dat-plus-nguoi-thuong",
+    link: "ban-dat-va-nguoi-thuong",
   },
   {
     id: 54,
@@ -279,12 +279,12 @@ const danhSachKhachMoi = [
   {
     id: 55,
     ten: "Bạn Kiệt + người thương",
-    link: "ban-kiet-plus-nguoi-thuong",
+    link: "ban-kiet-va-nguoi-thuong",
   },
   {
     id: 56,
     ten: "Bạn Hậu + người thương",
-    link: "ban-hau-plus-nguoi-thuong",
+    link: "ban-hau-va-nguoi-thuong",
   },
   {
     id: 57,
