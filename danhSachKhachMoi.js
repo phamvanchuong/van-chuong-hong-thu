@@ -168,28 +168,28 @@ const danhSachKhachMoi = [
   },
   {
     id: 33,
-    ten: "Em Tí",
-    link: "em-ti",
+    ten: "Em Tí + người thương",
+    link: "em-ti-va-nguoi-thuong",
   },
   {
     id: 34,
-    ten: "Em Diệu",
-    link: "em-dieu",
+    ten: "Em Diệu + người thương",
+    link: "em-dieu-va-nguoi-thuong",
   },
   {
     id: 35,
-    ten: "Em Lùn",
-    link: "em-lun",
+    ten: "Em Lùn + người thương",
+    link: "em-lun-va-nguoi-thuong",
   },
   {
     id: 36,
-    ten: "Em Sơn",
-    link: "em-son",
+    ten: "Em Sơn + người thương",
+    link: "em-son-va-nguoi-thuong",
   },
   {
     id: 37,
-    ten: "Em Chí Vỹ",
-    link: "em-chi-vy",
+    ten: "Cháu Chí Vỹ + người thương",
+    link: "chau-chi-vy-va-nguoi-thuong",
   },
   {
     id: 38,
@@ -288,18 +288,18 @@ const danhSachKhachMoi = [
   },
   {
     id: 57,
-    ten: "Bạn Hà",
-    link: "ban-ha",
+    ten: "Bạn Hà + người thương",
+    link: "ban-ha-va-nguoi-thuong",
   },
   {
     id: 58,
-    ten: "Bạn Hoàng",
-    link: "ban-hoang",
+    ten: "Bạn Hoàng + người thương",
+    link: "ban-hoang-va-nguoi-thuong",
   },
   {
     id: 59,
-    ten: "Bạn Nam",
-    link: "ban-nam",
+    ten: "Bạn Nam + người thương",
+    link: "ban-nam-va-nguoi-thuong",
   },
   {
     id: 60,
