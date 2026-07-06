@@ -18,6 +18,10 @@ function initGuestName() {
     const guest = danhSachKhachMoi.find(k => k.link.toLowerCase() === slug);
     if (!guest) return;
 
+    // Link riêng của khách mời → hiện phần Hộp mừng cưới
+    const giftSection = document.getElementById('giftSection');
+    if (giftSection) giftSection.style.display = '';
+
     document.title = `Thiệp Cưới – Văn Chương & Hồng Thư – Kính mời ${guest.ten}`;
 
     // Điền tên khách mời ở cả bìa thiệp và phần thông tin nhà hàng
