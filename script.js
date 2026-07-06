@@ -25,6 +25,10 @@ function initGuestName() {
         const el = document.getElementById(id);
         if (el) el.textContent = guest.ten;
     });
+
+    // Điền sẵn tên khách mời vào ô "Họ tên của bạn" trong phần lời chúc
+    const gbNameInput = document.getElementById('gbName');
+    if (gbNameInput) gbNameInput.value = guest.ten;
 }
 
 // ── TRÁI TIM RƠI ────────────────────────────────
