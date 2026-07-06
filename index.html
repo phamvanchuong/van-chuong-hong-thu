@@ -297,7 +297,9 @@
 
 <!-- Lightbox -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <img id="lightboxImg" src="" alt="">
+    <button type="button" class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); prevLightboxImage()" aria-label="Ảnh trước">&#10094;</button>
+    <img id="lightboxImg" src="" alt="" onclick="event.stopPropagation()">
+    <button type="button" class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); nextLightboxImage()" aria-label="Ảnh sau">&#10095;</button>
 </div>
 
 <!-- Nhạc nền đám cưới – đặt file tại music/nhac.m4a -->

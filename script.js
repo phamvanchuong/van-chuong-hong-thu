@@ -361,12 +361,30 @@ function toggleGift() {
 }
 
 // ── LIGHTBOX ẢNH ─────────────────────────────
+let lightboxImages = [];
+let lightboxIndex  = 0;
+
+function getLightboxImages() {
+    return Array.from(document.querySelectorAll('.album-item img'))
+        .filter((img) => img.style.display !== 'none' && img.src);
+}
+
+function showLightboxImage(index) {
+    if (!lightboxImages.length) return;
+    lightboxIndex = (index + lightboxImages.length) % lightboxImages.length;
+    const img = lightboxImages[lightboxIndex];
+    document.getElementById('lightboxImg').src = img.src;
+    document.getElementById('lightboxImg').alt = img.alt;
+}
+
 function openLightbox(item) {
     const img = item.querySelector('img');
     if (!img || img.style.display === 'none' || !img.src) return;
 
-    document.getElementById('lightboxImg').src = img.src;
-    document.getElementById('lightboxImg').alt = img.alt;
+    lightboxImages = getLightboxImages();
+    const index = lightboxImages.indexOf(img);
+    showLightboxImage(index === -1 ? 0 : index);
+
     document.getElementById('lightbox').classList.add('active');
     document.body.style.overflow = 'hidden';
 }
@@ -376,6 +394,28 @@ function closeLightbox() {
     document.body.style.overflow = '';
 }
 
+function nextLightboxImage() { showLightboxImage(lightboxIndex + 1); }
+function prevLightboxImage() { showLightboxImage(lightboxIndex - 1); }
+
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeLightbox();
+    const lightbox = document.getElementById('lightbox');
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape')     closeLightbox();
+    if (e.key === 'ArrowRight') nextLightboxImage();
+    if (e.key === 'ArrowLeft')  prevLightboxImage();
 });
+
+// Vuốt (swipe) để chuyển ảnh trên di động
+(() => {
+    let touchStartX = 0;
+    const lightbox = document.getElementById('lightbox');
+    lightbox.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+    lightbox.addEventListener('touchend', (e) => {
+        const deltaX = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(deltaX) < 40) return;
+        if (deltaX < 0) nextLightboxImage();
+        else            prevLightboxImage();
+    }, { passive: true });
+})();
