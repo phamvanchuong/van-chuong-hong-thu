@@ -313,18 +313,18 @@ const danhSachKhachMoi = [
   },
   {
     id: 62,
-    ten: "Bạn Diện",
-    link: "ban-dien",
+    ten: "Bạn Diện + người thương",
+    link: "ban-dien-va-nguoi-thuong",
   },
   {
     id: 63,
-    ten: "Bạn Giang",
-    link: "ban-giang",
+    ten: "Gia đình bạn Giang",
+    link: "gia-dinh-ban-giang",
   },
   {
     id: 64,
-    ten: "Bạn Phát",
-    link: "ban-phat",
+    ten: "Bạn Phát + người thương",
+    link: "ban-phat-va-nguoi-thuong",
   },
   {
     id: 65,

@@ -184,14 +184,14 @@ https://phamvanchuong.github.io/van-chuong-hong-thu/gia-dinh-ban-men
 61. Gia đình bạn Quà
 https://phamvanchuong.github.io/van-chuong-hong-thu/gia-dinh-ban-qua
 
-62. Bạn Diện
-https://phamvanchuong.github.io/van-chuong-hong-thu/ban-dien
+62. Bạn Diện + người thương
+https://phamvanchuong.github.io/van-chuong-hong-thu/ban-dien-va-nguoi-thuong
 
-63. Bạn Giang
-https://phamvanchuong.github.io/van-chuong-hong-thu/ban-giang
+63. Gia đình bạn Giang
+https://phamvanchuong.github.io/van-chuong-hong-thu/gia-dinh-ban-giang
 
-64. Bạn Phát
-https://phamvanchuong.github.io/van-chuong-hong-thu/ban-phat
+64. Bạn Phát + người thương
+https://phamvanchuong.github.io/van-chuong-hong-thu/ban-phat-va-nguoi-thuong
 
 65. Gia đình anh Việt
 https://phamvanchuong.github.io/van-chuong-hong-thu/gia-dinh-anh-viet
