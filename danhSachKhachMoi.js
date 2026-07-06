@@ -288,8 +288,8 @@ const danhSachKhachMoi = [
   },
   {
     id: 57,
-    ten: "Bạn Hà + người thương",
-    link: "ban-ha-va-nguoi-thuong",
+    ten: "Bạn Hà + Thư",
+    link: "ban-ha-va-thu",
   },
   {
     id: 58,
