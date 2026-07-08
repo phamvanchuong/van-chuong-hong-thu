@@ -1,8 +1,8 @@
 DANH SÁCH KHÁCH MỜI - THIỆP CƯỚI VĂN CHƯƠNG & HỒNG THƯ
 ═══════════════════════════════════════════════════════════
 
-1. Gia đình chị Lập
-https://phamvanchuong.github.io/van-chuong-hong-thu/gia-dinh-chi-lap
+1. Vợ chồng chị Lập
+https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-chi-lap
 
 2. Vợ chồng anh Phong
 https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-anh-phong
@@ -10,20 +10,20 @@ https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-anh-phong
 3. Vợ chồng chị Hà
 https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-chi-ha
 
-4. Vợ chồng Xiêm
-https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-xiem
+4. Vợ chồng em Xiêm
+https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-em-xiem
 
-5. Vợ chồng Quyên
-https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-quyen
+5. Vợ chồng em Quyên
+https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-em-quyen
 
-6. Gia đình Hiển
-https://phamvanchuong.github.io/van-chuong-hong-thu/gia-dinh-hien
+6. Vợ chồng em Hiển
+https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-em-hien
 
-7. Gia đình Dương
-https://phamvanchuong.github.io/van-chuong-hong-thu/gia-dinh-duong
+7. Vợ chồng em Dương
+https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-em-duong
 
-8. Vợ chồng Thành Anh
-https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-thanh-anh
+8. Vợ chồng em Thành Anh
+https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-em-thanh-anh
 
 9. Bé Hiền
 https://phamvanchuong.github.io/van-chuong-hong-thu/be-hien
@@ -37,13 +37,13 @@ https://phamvanchuong.github.io/van-chuong-hong-thu/em-ly
 12. Bạn Hảo
 https://phamvanchuong.github.io/van-chuong-hong-thu/ban-hao
 
-13. Gia đình anh Minh
-https://phamvanchuong.github.io/van-chuong-hong-thu/gia-dinh-a-minh
+13. Vợ chồng anh Minh
+https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-a-minh
 
-14. Gia đình anh Nhí
-https://phamvanchuong.github.io/van-chuong-hong-thu/gia-dinh-anh-nhi
+14. Vợ chồng anh Nhí
+https://phamvanchuong.github.io/van-chuong-hong-thu/vo-chong-anh-nhi
 
-15. Anh Dũng
+15. Vợ chồng anh Dũng
 https://phamvanchuong.github.io/van-chuong-hong-thu/anh-dung
 
 16. Gia đình anh 2 Long

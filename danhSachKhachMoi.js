@@ -8,8 +8,8 @@
 const danhSachKhachMoi = [
   {
     id: 1,
-    ten: "Gia đình chị Lập",
-    link: "gia-dinh-chi-lap",
+    ten: "Vợ chồng chị Lập",
+    link: "vo-chong-chi-lap",
   },
   {
     id: 2,
@@ -23,28 +23,28 @@ const danhSachKhachMoi = [
   },
   {
     id: 4,
-    ten: "Vợ chồng Xiêm",
-    link: "vo-chong-xiem",
+    ten: "Vợ chồng em Xiêm",
+    link: "vo-chong-em-xiem",
   },
   {
     id: 5,
-    ten: "Vợ chồng Quyên",
-    link: "vo-chong-quyen",
+    ten: "Vợ chồng em Quyên",
+    link: "vo-chong-em-quyen",
   },
   {
     id: 6,
-    ten: "Gia đình Hiển",
-    link: "gia-dinh-hien",
+    ten: "Vợ chồng em Hiển",
+    link: "vo-chong-em-hien",
   },
   {
     id: 7,
-    ten: "Gia đình Dương",
-    link: "gia-dinh-duong",
+    ten: "Vợ chồng em Dương",
+    link: "vo-chong-em-duong",
   },
   {
     id: 8,
-    ten: "Vợ chồng Thành Anh",
-    link: "vo-chong-thanh-anh",
+    ten: "Vợ chồng em Thành Anh",
+    link: "vo-chong-em-thanh-anh",
   },
   {
     id: 9,
@@ -68,18 +68,18 @@ const danhSachKhachMoi = [
   },
   {
     id: 13,
-    ten: "Gia đình anh Minh",
-    link: "gia-dinh-a-minh",
+    ten: "Vợ chồng anh Minh",
+    link: "vo-chong-a-minh",
   },
   {
     id: 14,
-    ten: "Gia đình anh Nhí",
-    link: "gia-dinh-anh-nhi",
+    ten: "Vợ chồng anh Nhí",
+    link: "vo-chong-anh-nhi",
   },
   {
     id: 15,
-    ten: "Anh Dũng",
-    link: "anh-dung",
+    ten: "Vợ chồng anh Dũng",
+    link: "vo-chong-anh-dung",
   },
   {
     id: 16,
