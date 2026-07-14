@@ -178,8 +178,8 @@ const danhSachKhachMoi = [
   },
   {
     id: 35,
-    ten: "Em Lùn + người thương",
-    link: "em-lun-va-nguoi-thuong",
+    ten: "Em Thư + người thương",
+    link: "em-thu-va-nguoi-thuong",
   },
   {
     id: 36,
