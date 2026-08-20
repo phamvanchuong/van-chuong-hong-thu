@@ -160,6 +160,8 @@ function openInvitation() {
 const WEDDING_DATE = new Date('2026-07-25T05:00:00Z');
 
 function startCountdown() {
+    let timer;
+
     function tick() {
         const now  = new Date();
         const diff = WEDDING_DATE - now;
@@ -186,7 +188,7 @@ function startCountdown() {
     }
 
     tick();
-    const timer = setInterval(tick, 1000);
+    timer = setInterval(tick, 1000);
 }
 
 // ── HIỆU ỨNG CUỘN ────────────────────────────
